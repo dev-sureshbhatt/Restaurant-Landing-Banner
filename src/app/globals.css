@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+button.selected-filter{
+  background-color: #345333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px / 50%;
+  font-size: 13px;
+}
+
+button.non-selected-filter{
+  padding: 10px 20px;
+  font-size: 10px;
+  font-size: 13px;
+}

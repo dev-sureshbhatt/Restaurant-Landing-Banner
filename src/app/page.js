@@ -1,17 +1,25 @@
 import Image from "next/image";
 import { ProductListCard } from "./components/ProductListCard";
 import FilterByCategory from "./components/FilterByCategory";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
 
+    <Navbar />
+      {/*------ Start of Filter by Category Section -----*/}
+      <div className="flex flex-col justify-center items-center">
+        {/* Title and Subtitle */}
+        <div className="text-base font-semibold">Shop by Category</div>
+        <div className="text-2xl md:text-3xl text-center">Top Category of Organic Food</div>
 
 
-    <FilterByCategory />
+        <div className="py-4"></div>
 
-      
+        {/* Main Filter by Category Component */}
+        <FilterByCategory />
+      </div>
     </>
-    
-    );
+  );
 }
