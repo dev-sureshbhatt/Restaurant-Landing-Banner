@@ -34,3 +34,10 @@ div.img-container{
   position: relative;
   left: -90px;
 }
+
+
+div.navbar{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}

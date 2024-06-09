@@ -5,9 +5,11 @@ import { dummyData } from "../dummyData";
 
 const FilterByCategory = () => {
     const [data, setData] = useState(dummyData)
-    const[displayItem, setDisplayItem] = useState(dummyData)
+    const[displayItem, setDisplayItem] = useState(dummyData.filter(item => item.category == "MEAT AND SEAFOOD"))
     const [selectedfilterName, setSelectedFilterName] = useState("MEAT AND SEAFOOD")
     let filters = ["FRUITS AND VEGETABLES", "BAKERY", "MEAT AND SEAFOOD", "BISCUIT AND SNACKS", "BEVERAGE"];
+
+    
 
 
   function handleFilterButtonClick(filterName){

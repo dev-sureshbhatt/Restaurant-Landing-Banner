@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import demoImage from '/public/demo.jpeg'; // Import the image
+import demoImage from '/public/chicken-tikka.jpg'; // Import the image
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
