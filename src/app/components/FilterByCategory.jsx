@@ -7,7 +7,7 @@ const FilterByCategory = () => {
     const [data, setData] = useState(dummyData)
     const[displayItem, setDisplayItem] = useState(dummyData)
     const [selectedfilterName, setSelectedFilterName] = useState("MEAT AND SEAFOOD")
-    let filters = ["FRUITS AND VEGETABLES", "BAKERY", "MEAT AND SEAFOOD"];
+    let filters = ["FRUITS AND VEGETABLES", "BAKERY", "MEAT AND SEAFOOD", "BISCUIT AND SNACKS", "BEVERAGE"];
 
 
   function handleFilterButtonClick(filterName){
@@ -19,14 +19,14 @@ const FilterByCategory = () => {
   }
 
   return (
-    <>
+    <div  className="h-screen my-4">
       <div className="filters flex flex-wrap justify-center">
         {filters.map((item, index) => {
-          return    <button
+          return    <div
           className={item == selectedfilterName ? "selected-filter" : "non-selected-filter"}
           onClick={()=>handleFilterButtonClick(item)}
                     >
-            {item}</button>;
+            {item}</div>;
         })}
       </div>
       <div className="flex flex-wrap justify-center">
@@ -34,7 +34,7 @@ const FilterByCategory = () => {
           return <ProductListCard item={item} />;
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,16 +3,34 @@
 @tailwind utilities;
 
 
-button.selected-filter{
+div.selected-filter{
   background-color: #345333;
   color: white;
   padding: 10px 20px;
   border-radius: 20px / 50%;
   font-size: 13px;
+  /* cursor: pointer; */
 }
 
-button.non-selected-filter{
+
+div.cta-btn{
+  background-color: #345333;
+  color: white;
   padding: 10px 20px;
+  border-radius: 20px / 50%;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+div.non-selected-filter{
+  padding: 10px 20px;
+  cursor: pointer;
   font-size: 10px;
   font-size: 13px;
+}
+
+div.img-container{
+  /* background-color: aqua; */
+  position: relative;
+  left: -90px;
 }
